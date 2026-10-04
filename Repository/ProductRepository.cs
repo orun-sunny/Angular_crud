@@ -18,6 +18,7 @@ namespace Asp.netcore_with_angular.Model
         {
             // db.Products.Add(vm);
             await db.Products.AddAsync(vm);
+            await db.SaveChangesAsync();
         }
 
 
